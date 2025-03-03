@@ -1,4 +1,4 @@
-# Bank Account API
+# Bank Account
 
 Este projeto consiste em uma API que simula uma conta bancária em Node.js. A API permite operações como criação de conta, depósitos, saques, transferências e consulta de saldo. Além disso, é necessário autenticação para acessar os endpoints protegidos.
 
@@ -132,3 +132,19 @@ O frontend está configurado para utilizar a conta 100, definida através de var
 | POST   | `/event` | `{ "type": "transfer", "origin": "200", "amount": 15, "destination": "300" }` | `404 0`                                                                                          |
 
 ---
+
+## Screenshots 📸
+
+![dashboard](./docs/screenshots/dashboard.png)
+
+<br />
+
+![deposit](./docs/screenshots/deposit.png)
+
+<br />
+
+![withdraw](./docs/screenshots/withdraw.png)
+
+<br />
+
+![transfer](./docs/screenshots/transfer.png)
