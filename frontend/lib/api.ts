@@ -1,7 +1,6 @@
 "use client";
 
 import Cookies from "js-cookie";
-import router from "next/router";
 
 const API_URL = process.env.apiUrl;
 
@@ -73,16 +72,14 @@ export async function getBalance(
       }
     );
 
-    if (!response.ok) {
-      const error = await response.json();
-
+    if (response.status === 404) {
       await createEvent({
         type: "deposit",
         amount: 0,
-        destination: process.env.clientId!,
+        destination: accountId,
       });
 
-      return { error: error.message || "Failed to fetch balance" };
+      return await getBalance(accountId);
     }
 
     return { data: await response.json() };

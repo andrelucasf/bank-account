@@ -72,7 +72,7 @@ export default function DepositPage() {
 
       toast({
         title: "Deposit successful",
-        description: `$R${form.getValues(
+        description: `R$${form.getValues(
           "amount"
         )} has been deposited to your account.`,
       });

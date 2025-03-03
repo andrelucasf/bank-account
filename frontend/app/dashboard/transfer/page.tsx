@@ -106,7 +106,7 @@ export default function TransferPage() {
 
       toast({
         title: "Transfer successful",
-        description: `$R${formValues?.amount} has been transferred successfully.`,
+        description: `R$${formValues?.amount} has been transferred successfully.`,
       });
 
       form.reset({

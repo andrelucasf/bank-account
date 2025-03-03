@@ -82,7 +82,7 @@ export default function WithdrawPage() {
 
       toast({
         title: "Withdrawal successful",
-        description: `$R${form.getValues(
+        description: `R$${form.getValues(
           "amount"
         )} has been withdrawn from your account.`,
       });
